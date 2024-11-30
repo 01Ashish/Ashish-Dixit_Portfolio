@@ -28,7 +28,7 @@ def Home():
     📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/ashish-dixit-ba587b200/) || [GitHub](https://github.com/01Ashish) ||  [Email](mailto:ashdixit2003@gmail.com)
     """)
     st.write("Here's my resume:")
-    with open("/home/ashish-dixit/ashish/vscode/iit/speech2text/faster_gt/Ashish_cv(16 Nov).pdf", "rb") as file:
+    with open("Ashish_cv(16 Nov).pdf", "rb") as file:
         btn = st.download_button(
             label="Download Resume",
             data=file,
