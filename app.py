@@ -15,11 +15,13 @@ def load_lottieurl(url):
 # Home Function --------------------------------------------------------------------------------------------------------------
 def Home():
     st.markdown("""
-    ## Hi, I'm Raj 👋
-    # A Data Science Student
-    By day, I'm diving deep into **Data Structures and Algorithms (DSA)**, and by night, I'm exploring the vast worlds of Data Science, including **Data Analysis**, **Machine Learning**, and **Deep Learning**. My journey also includes working on cutting-edge *Large Language Models*, bringing innovative ideas to fruition. My technical arsenal includes **Python**, **C++**, **SQL**, **React.js**, **Streamlit**, **pandas**, **numpy**, **matplotlib**, **Plotly**, and **seaborn**, to name a few. 
-    
-    My portfolio is a treasure trove of diverse projects, from building pathfinder visualizers and Gemini API clones to developing interactive data visualization tools. Whether it's crafting complex algorithms or designing captivating user interfaces, I'm your go-to person for all things development. When I'm not coding, you can find me exploring the latest tech trends or honing my problem-solving skills. I'm always eager to learn and grow, and I'm excited about where my passion for Data Science and development will take me next. If you're looking to bring your ideas to life, let's collaborate and create something extraordinary together!
+    ## Hi, I'm Ashish 👋
+    # A Artificial Intelligent & Data Science Student
+    By day, I'm immersed in the world of Artificial Intelligence, designing algorithms that power intelligent systems, and exploring the transformative potential of Generative AI to create meaningful, cutting-edge applications. By night, I delve into Machine Learning and Deep Learning, unearthing patterns, building predictive models, and crafting innovative solutions that redefine how data interacts with technology.
+
+    This exploration is more than just a career—it's a commitment to harnessing AI's potential to revolutionize the way we work, create, and live. With every project, I strive to merge creativity and technology, leaving a lasting impact on the world of Generative AI and beyond.
+
+    Does this fit your vision? 😊
 
     📂 Here, you will find a collection of my **projects**, **achievements**, and **insights** into the world of data science and artificial intelligence. 🌐 Explore and feel free to reach out if you have any questions or collaboration ideas!
 
@@ -40,7 +42,104 @@ def Home():
     else:
         st.error("Failed to load Lottie animation.")
     
+# Experince Function --------------------------------------------------------------------------------------------------------------
+def Experience():
+    st.markdown("# 💼 Work Experience")
+    
+    # Work 1 Container
+    with st.container():
+        img_col, text_col = st.columns((1, 2))
+        with img_col:
+            lottie_url = "https://lottie.host/db13156d-fdc8-452f-9377-7be3cf91990b/uGa0YUaQmL.json"  # Replace with your Lottie animation URL
+            lottie_animation = load_lottieurl(lottie_url)
+            if lottie_animation:
+                st_lottie(lottie_animation, speed=1, height=300, key="work1")
+            else:
+                st.error("Add your Lottie animation URL for Work Experience 1.")
+        with text_col:
+            st.write("### AI/ML Intern Intern")
+            st.write("""
+                    - **Company**: [Bikham Healthcare](https://www.bikham.com/)  
+                    - **Duration**: Aug 2024 - Present  
+                    - **Highlights**:
+                        - Works in US Shifts and interacting with US Clients. Involved in backend development projects focused on AI-
+                        driven automation, including chatbot development, and integrating APIs for data extraction and task
+                        optimization for making credentialling task automated.  
+                        - Collaborated with cross-functional teams to deploy scalable solutions using **TensorFlow** and **Streamlit**.  
+                    """)
+            st.write("[Explore Company Website](https://www.bikham.com/)")
+    
+    st.write("---")
+    
+    # Work 2 Container
+    with st.container():
+        img_col, text_col = st.columns((1, 2))
+        with img_col:
+            lottie_url = "https://lottie.host/0254e2d8-da78-4056-8c3e-24849b37090d/uONs9yKEH0.json"  # Replace with the Lottie animation URL
+            lottie_animation = load_lottieurl(lottie_url)
+            if lottie_animation:
+                st_lottie(lottie_animation, speed=1, height=300, key="iit_delhi")
+            else:
+                st.error("Add your Lottie animation URL for IIT Delhi experience.")
+        with text_col:
+            st.write("### Research Intern")
+            st.write("""
+                    - **Institution**: (IIT Delhi)[https://home.iitd.ac.in/] 
+                    - **Duration**: May 2024 - Nov 2024  
+                    - **Highlights**:
+                        - Coordinated with the frontend team to build an **Automatic Speech Recognition (ASR) API**.  
+                        - Integrated **Diarization capabilities** for bilingual speech processing.  
+                        - Contributed to research projects in cutting-edge AI technologies.
+                    """)
+            st.write("[Explore Company Website](https://home.iitd.ac.in/)")
 
+    st.write("---")
+    
+    # Experience 2: Edulyt India
+    with st.container():
+        img_col, text_col = st.columns((1, 2))
+        with img_col:
+            lottie_url = "https://lottie.host/5fc47551-c865-4f0b-80ea-6ab745c0a3b1/esGXdLQPX8.json"  # Replace with the Lottie animation URL
+            lottie_animation = load_lottieurl(lottie_url)
+            if lottie_animation:
+                st_lottie(lottie_animation, speed=1, height=300, key="edulyt_india")
+            else:
+                st.error("Add your Lottie animation URL for Edulyt India experience.")
+        with text_col:
+            st.write("### Data Analyst Intern")
+            st.write("""
+                    - **Company**: (Edulyt India)[https://edulyt.com/]  
+                    - **Duration**: Jun 2024 - Sep 2024  
+                    - **Highlights**:
+                        - Performed **data cleaning**, **sanity checks**, and **analysis** for business insights.  
+                        - Created impactful **visualizations** to support data-driven strategies.  
+                        - Played a key role in decision-making processes by providing actionable insights.
+                    """)
+            st.write("[Explore Company Website](https://edulyt.com/)")
+
+    st.write("---")
+    
+    # Experience 3: Pantech Prolabs India Pvt. Ltd.
+    with st.container():
+        img_col, text_col = st.columns((1, 2))
+        with img_col:
+            lottie_url = "https://lottie.host/0254e2d8-da78-4056-8c3e-24849b37090d/uONs9yKEH0.json"  # Replace with the Lottie animation URL
+            lottie_animation = load_lottieurl(lottie_url)
+            if lottie_animation:
+                st_lottie(lottie_animation, speed=1, height=300, key="pantech_prolabs")
+            else:
+                st.error("Add your Lottie animation URL for Pantech Prolabs experience.")
+        with text_col:
+            st.write("### Artificial Intelligence Intern")
+            st.write("""
+                    - **Company**: (Pantech Prolabs India Pvt. Ltd.)[https://www.pantechsolutions.net/]  
+                    - **Duration**: Aug 2023 - Sep 2023  
+                    - **Highlights**:
+                        - Mentored junior interns on **AI concepts** and programming best practices.  
+                        - Built and optimized **deep learning models** using **TensorFlow** and **Keras**.  
+                        - Provided debugging assistance to improve code reliability and system performance.
+                    """)
+            st.write("[Explore Company Website](https://www.pantechsolutions.net/)")
 # Projects Function --------------------------------------------------------------------------------------------------------------
 def Projects():
     st.title('My Projects')
@@ -48,186 +147,135 @@ def Projects():
     with st.container():
         img_col, text_col = st.columns((1, 2))
         with img_col:
-            lottie_url = "https://lottie.host/eee3dbab-2db1-47ff-8517-bbe523b2e542/DJxtNRMpWw.json"
+            lottie_url = "https://lottie.host/968eeb96-ecab-4fe7-8345-445d0815cd91/QMeTBigFru.json"  # Replace with appropriate Lottie animation URL
             lottie_animation = load_lottieurl(lottie_url)
             if lottie_animation:
                 st_lottie(lottie_animation, speed=1, height=300, key="project1")
             else:
-                st.error("Failed to load Lottie animation.")
+                st.error("Add your Lottie animation URL for ASR project.")
         with text_col:
-            # Enter Desctipion
-            st.write("### Steam Game Analyzer")
+            st.write("### Automatic Speech Recognition with Diarization")
             st.write("""
-                    - Developed a streamlined analysis tool using Streamlit, enabling efficiant game data exploration.
-                    - Utilised data analysis techniques to provide actionable insights.
-                    - Recieved positive feedback from 100+ users for creating a user-friendly interface.
+                    - **Model Building**: Built using Python and FasterWhisper (`Ctranslate2 transformer engine`) large-v2.  
+                    - **Model Implementation**: Developed an interactive application using Python's Streamlit framework.  
+                    - **Deployment**: Deployed the project using Pyngrok by creating secure tunneling from Colab localhost to public URLs, leveraging Colab's T-4 GPU.  
+                    - **Repository**: [Explore the GitHub Repo](https://github.com/01Ashish/ASR-SpeakerDiarization).
                     """)
-            if st.button("Know More ➡️"):
+            if st.button("Know More ➡️", key="speech"):
                 with st.expander("### Technologies Used", expanded=False):
-                    col1, col2, col3 = st.columns(3)
+                    col1, col2 = st.columns(2)
                     with col1:
                         st.write("- Python")
                         st.write("- Streamlit")
-                        st.write("- Pandas")
+                        st.write("- FasterWhisper")
+                        st.write("- Flask")
+
                     with col2:
-                        st.write("- Plotly")
-                        st.write("- Seaborn")
-                        st.write("- Numpy")
-                    with col3:
-                        st.write("- Matplotlib")
-                        
-                with st.expander("### Project Link", expanded = False):
-                    st.write("[Try the Steam Game Analyzer](https://steam-streamli-app.streamlit.app/)")
-                    
-                with st.expander("Features", expanded = False):
+                        st.write("- Pyngrok")
+                        st.write("- Colab (T-4 GPU)")
+                
+                with st.expander("Features", expanded=False):
                     st.write("""
-                            - **Data Exploration**: Analyze game data based on various attributes.
-                            - **Data Visualization**: Visualize data using interactive plots.
-                            - **User-Friendly Interface**: Easy-to-use interface for all users.
-                            - **Added Features**: Analyse games based on the trophies they won and the number of DLCs they have.
+                            - **Automatic Diarization**: Identifies and separates speakers in audio files.
+                            - **Real-Time Speech Recognition**: Processes and converts bilingual speech to text.
+                            - **User-Friendly Interface**: Easy-to-use Streamlit-based web app.
                             """)
-    
-    # Project 2 Container
+
+    # Project 2: VedaVox Ayurveda Chatbot
     with st.container():
         st.write("---")
-        st.write("##")
         img_col, text_col = st.columns((1, 2))
         with img_col:
-            lottie_url = "https://lottie.host/01132fcd-221d-4491-8c99-6ce0f1127dd7/lJxZcH3eAt.json"
+            lottie_url = "https://lottie.host/68882159-ef9d-452d-b3af-5906fcd682cc/4SvphCphCS.json"  # Replace with appropriate Lottie animation URL
             lottie_animation = load_lottieurl(lottie_url)
             if lottie_animation:
                 st_lottie(lottie_animation, speed=1, height=300, key="project2")
             else:
-                st.error("Failed to load Lottie animation.")
+                st.error("Add your Lottie animation URL for Chatbot project.")
         with text_col:
-            st.write("### PresentSeek : The Attendance Management System")
+            st.write("### VedaVox: The Ayurveda Chatbot")
             st.write("""
-                    - Implemented detailed dashboards for over 1,000 students, enhancing attendance accuracy by 25%.
-                    -  Reduced time spent on attendance management by 30%, streamlining administrative processes.
+                    - **STT and TTS Integration**: Users can query the chatbot without typing, using speech-to-text and text-to-speech.  
+                    - **Knowledge Base**: Trained to provide accurate Ayurvedic information and recommendations.  
+                    - **Repository**: [Explore the GitHub Repo](https://github.com/01Ashish/VedaVox---The-Ayurveda-Chatbot).  
                     """)
-            if st.button("Know More 🚀"):
+            if st.button("Know More 🚀", key="chatbot"):
                 with st.expander("### Technologies Used", expanded=False):
                     col1, col2 = st.columns(2)
                     with col1:
-                        st.write("- HTML")
-                        st.write("- CSS")
-                        st.write("- JavaScript")
+                        st.write("- Python")
+                        st.write("- Speech-to-Text (STT)")
+                        st.write("- Text-to-Speech (TTS)")
                     with col2:
-                        st.write("- BootStrap CSS")
-                        st.write("- PHP")
-                        st.write("- MySQL")
+                        st.write("- NLTK")
+                        st.write("- Flask")
                 
-                with st.expander("### Project Link", expanded = False):
-                    st.write("[PresentSeek's Repo](https://github.com/RAJTripathi3030/PresentSeek)")
-                    
-                with st.expander("Features", expanded = False):
+                with st.expander("Features", expanded=False):
                     st.write("""
-                            - **Detailed Dashboards**: View detailed attendance reports for each student.
-                            - **Attendance Management**: Manage attendance for over 1,000 students.
-                            - **Streamlined Processes**: Reduce time spent on administrative tasks.
-                            - **User-Friendly Interface**: Easy-to-use interface for all users.
+                            - **Voice Interaction**: Fully voice-based interaction using STT and TTS.
+                            - **Ayurveda Knowledge Base**: Provides detailed Ayurvedic insights and suggestions.
+                            - **Custom Responses**: Dynamically generates accurate responses for various queries.
                             """)
-    
-    # Project 3 Container
+
+    # Project 3: Abstractive Text Summarizer
     with st.container():
         st.write("---")
-        st.write("##")
         img_col, text_col = st.columns((1, 2))
         with img_col:
-            lottie_url = "https://lottie.host/26387e36-3492-4465-9f16-fbf9db4a4807/YuzVL6WIpe.json"
+            lottie_url = "https://lottie.host/35ecc059-3649-48fc-a898-b8f8a74a1b13/L0dvbbjXhd.json"  # Replace with appropriate Lottie animation URL
             lottie_animation = load_lottieurl(lottie_url)
             if lottie_animation:
                 st_lottie(lottie_animation, speed=1, height=300, key="project3")
             else:
-                st.error("Failed to load Lottie animation.")
+                st.error("Add your Lottie animation URL for Summarizer project.")
         with text_col:
-            st.write("### EDA Projet on Suicide Dataset")
+            st.write("### Abstractive Text Summarizer")
             st.write("""
-                    - Analyzed 10 years of suicide rate data across multiple regions, identifying a 15% increase in specific areas.
-                    - Pinpointed significant changes using statistical methods, revealing a 10% spike in 2017.
-                    - Mapped trends showing a 20% higher rate in urban areas compared to rural ones.
+                    - **Model Building**: Utilized the transformer model `facebook/bart-large-cnn` via Hugging Face API.  
+                    - **Model Implementation**: Implemented using Flask for the backend and HTML/CSS for the frontend.  
+                    - **Deployment**: Hosted the application on PythonAnywhere.  
+                    - **Repository**: [Explore the GitHub Repo](https://github.com/01Ashish/Text-Summarizer).
+                    - **Live Demo**: [Try the Summarizer](https://ashish11.pythonanywhere.com/).  
                     """)
-            if st.button("Know More 🎂"):
+            if st.button("Know More 🎂", key="summarizer"):
                 with st.expander("### Technologies Used", expanded=False):
                     col1, col2 = st.columns(2)
                     with col1:
                         st.write("- Python")
-                        st.write("- Pandas")
-                        st.write("- Numpy")
+                        st.write("- Flask")
+                        st.write("- HTML/CSS")
                     with col2:
-                        st.write("- Matplotlib")
-                        st.write("- Seaborn")
+                        st.write("- Hugging Face API")
+                        st.write("- BART Transformer")
                 
-                with st.expander("### Project Link", expanded = False):
-                    st.write("[View The Project on This Repo](https://github.com/RAJTripathi3030/Suicide-Dataset-EDA)")
-
-    # Project 4 Container
+                with st.expander("Features", expanded=False):
+                    st.write("""
+                            - **Abstractive Summarization**: Generates concise and meaningful summaries.
+                            - **Interactive Interface**: User-friendly design for ease of use.
+                            - **Scalable Deployment**: Efficiently hosted on PythonAnywhere.
+                            """)
+# Research Function --------------------------------------------------------------------------------------------------------------
+def ResearchPaper():
+    st.title("📄 Research Paper")
     with st.container():
-        st.write("---")
-        st.write("##")
         img_col, text_col = st.columns((1, 2))
         with img_col:
-            lottie_url = "https://lottie.host/2ba6554c-8a54-456d-b6c4-b70f155468c2/DX7lA91qJG.json"
+            lottie_url = "https://lottie.host/6b336b2b-73e7-46d3-9378-9a61e537876c/JpXZtKXvWq.json"  # Replace with appropriate Lottie animation URL
             lottie_animation = load_lottieurl(lottie_url)
             if lottie_animation:
-                st_lottie(lottie_animation, speed=1, height=300, key="project4")
+                st_lottie(lottie_animation, speed=1, height=300, key="research_paper")
             else:
-                st.error("Failed to load Lottie animation.")
+                st.error("Add your Lottie animation URL for the Research Paper section.")
         with text_col:
-            st.write("### Google Gemini Project")
+            st.write("### Comparative Study of Recognition of Textual Data using EAST Model and OCR")
             st.write("""
-                    - Engineered a fully functional Google Gemini clone, achieving 100% feature parity and functionality replication .
-                    - Crafted a pixel-perfect UI, meticulously adhering to Gemini's established design patterns and user experience guidelines .
-                    - Architected the front-end using React.js, seamlessly integrating Google Gemini API for powerful LLM capabilities .
-                    - Optimized performance, reducing initial load time by 20% compared to the original Gemini interface .
+                    - 📘 **Presented At**: 13th Conference of IRSD (I2OR - International Institute of Organized Research).  
+                    - 📈 **Focus**: Enhancing text recognition accuracy and efficiency in image-based document analysis.  
+                    - 🧠 **Methodology**:
+                        - Combined the **EAST detection model** with advanced **OCR algorithms**.
+                        - Aimed to achieve robust and reliable text extraction for complex datasets.  
+                    - 🌍 **Impact**: Proposed solutions to improve performance in image-to-text conversion systems, setting new benchmarks in document analysis.
                     """)
-            if st.button("Know More 🗯️"):
-                with st.expander("### Technologies Used", expanded=False):
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.write("- JavaScript")
-                        st.write("- React.js")
-                        st.write("- LLM")
-                    with col2:
-                        st.write("- CSS")
-                
-                with st.expander("### Project Link", expanded = False):
-                    st.write("[View The Project on This Repo](https://github.com/RAJTripathi3030/Gemini-Clone)")
-    
-    # Project 5 Container
-    with st.container():
-        st.write("---")
-        st.write("##")
-        img_col, text_col = st.columns((1, 2))
-        with img_col:
-            lottie_url = "https://lottie.host/f2e469ad-fe3c-471c-a817-b1768ab0312f/Yh7qlSV0Uq.json"
-            lottie_animation = load_lottieurl(lottie_url)
-            if lottie_animation:
-                st_lottie(lottie_animation, speed=1, height=300, key="project5")
-            else:
-                st.error("Failed to load Lottie animation.")
-                
-        with text_col:
-            st.write("### Movie Recommender System")
-            st.write("""
-                    - Developed an advanced recommender system, leveraging collaborative filtering and content-based filtering techniques.
-                    - Designed a user-friendly interface that allows seamless product discovery, significantly enhancing user engagement and satisfaction.
-                    - Implemented a robust algorithm that analyzes user behavior and preferences, providing personalized product recommendations with high accuracy.
-                    """)
-            if st.button("Know More 😄"):
-                with st.expander("### Technologies Used", expanded=False):
-                    col1, col2 = st.columns(2)
-                    with col1:
-                        st.write("- Python")
-                        st.write("- Pandas")
-                        st.write("- NumPy")
-                    with col2:
-                        st.write("- Scikit-Learn")
-                        st.write("- Streamlit")
-                        st.write("- NLTK")
-                
-                with st.expander("### Project Link", expanded = False):
-                    st.write("[View the live demo here](https://recommender-system-app.streamlit.app/)")
 # Achievements Function --------------------------------------------------------------------------------------------------------------
 def Achievements():
     with st.container():
@@ -235,9 +283,9 @@ def Achievements():
         col1, col2 = st.columns(2)
         with col1:
             st.markdown("""
-                        - 🧠 Solved 300+ questions on LeetCode. I'm on a roll!
-                        - 🌟 Topped the DevStar Bootcamp. Yes, I did that!
-                        - ⚽ Winner of the Intra-School Football Championship. Go team!
+                        - 🏅 **2nd Runner-Up** in MAIT Technical Poster Competition. Secured **3rd Prize** for outstanding innovation and presentation.  
+                        - 🧠 Solved **300+ questions on LeetCode**. I'm on a roll!  
+                        - 🌟 Member of the **Datalect Society**, actively contributing to data-driven initiatives and events.    
                     """)
             st.markdown("""
                         I believe that every achievement, big or small, is a stepping stone towards success. I am always eager to learn and grow, and I am excited to see what the future holds for me. 🚀
@@ -290,7 +338,7 @@ def Skills():
 with st.sidebar:
     selected_page = option_menu(
         "Navigate Here", 
-        ["Home", "Projects", "Achievements","Skills"],
+        ["Home","Experience", "Projects", "Research/Publication","Achievements","Skills"],
         icons = ['house', 'braces', 'trophy', 'code'],
         menu_icon = "cast",
         default_index = 0,
@@ -300,8 +348,12 @@ with st.sidebar:
 
 if selected_page == "Home":
     Home()
+elif selected_page == "Experience":
+    Experience()
 elif selected_page == "Projects":
     Projects()
+elif selected_page == "Research/Publication":
+    ResearchPaper()
 elif selected_page == "Achievements":
     Achievements()
 elif selected_page == "Skills":
