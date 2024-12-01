@@ -65,7 +65,7 @@ def Experience():
                         - Works in US Shifts and interacting with US Clients. Involved in backend development projects focused on AI-
                         driven automation, including chatbot development, and integrating APIs for data extraction and task
                         optimization for making credentialling task automated.  
-                        - Collaborated with cross-functional teams to deploy scalable solutions using **Python**, **Langchain**, **OpenAI**, **LLM**, **TensorFlow** and **Streamlit**.  
+                        - Collaborated with cross-functional teams to deploy scalable solutions using **Python**, **Langchain**, **OpenAI**, **LLM**, **TensorFlow** and **AWS**.  
                     """)
             st.write("[Explore Company Website](https://www.bikham.com/)")
     
