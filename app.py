@@ -84,7 +84,7 @@ def Experience():
         with text_col:
             st.write("### Research Intern")
             st.write("""
-                    - **Institution**: (IIT Delhi)[https://home.iitd.ac.in/] 
+                    - **Institution**: [IIT Delhi](https://home.iitd.ac.in/) 
                     - **Duration**: May 2024 - Nov 2024  
                     - **Highlights**:
                         - Coordinated with the frontend team to build an **Automatic Speech Recognition (ASR) API**.  
@@ -108,7 +108,7 @@ def Experience():
         with text_col:
             st.write("### Data Analyst Intern")
             st.write("""
-                    - **Company**: (Edulyt India)[https://edulyt.com/]  
+                    - **Company**: [Edulyt India](https://edulyt.com/)  
                     - **Duration**: Jun 2024 - Sep 2024  
                     - **Highlights**:
                         - Performed **data cleaning**, **sanity checks**, and **analysis** for business insights.  
@@ -132,7 +132,7 @@ def Experience():
         with text_col:
             st.write("### Artificial Intelligence Intern")
             st.write("""
-                    - **Company**: (Pantech Prolabs India Pvt. Ltd.)[https://www.pantechsolutions.net/]  
+                    - **Company**: [Pantech Prolabs India Pvt. Ltd.](https://www.pantechsolutions.net/)  
                     - **Duration**: Aug 2023 - Sep 2023  
                     - **Highlights**:
                         - Mentored junior interns on **AI concepts** and programming best practices.  
